@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hayekian - Professional Bitcoin investment platform. Combining Austrian economics with modern BTC investing strategies.">
+    <meta name="keywords" content="hayekian, bitcoin, BTC, investing, cryptocurrency, Austrian economics, Friedrich Hayek">
+    <meta name="author" content="Hayekian">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hayekian.io/">
+    <meta property="og:title" content="Hayekian - Bitcoin Investment Platform">
+    <meta property="og:description" content="Professional Bitcoin investment platform combining Austrian economics with modern BTC strategies.">
+    <meta property="og:image" content="https://hayekian.io/hayek-icon.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://hayekian.io/">
+    <meta name="twitter:title" content="Hayekian - Bitcoin Investment Platform">
+    <meta name="twitter:description" content="Professional Bitcoin investment platform combining Austrian economics with modern BTC strategies.">
+    <meta name="twitter:image" content="https://hayekian.io/hayek-icon.png">
+    
+    <link rel="canonical" href="https://hayekian.io/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/hayek-icon.png">
+    
+    <title>Hayekian - Bitcoin Investment Platform</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+        }
+        
+        /* Subtle grid pattern */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(247, 147, 26, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(247, 147, 26, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: 0;
+        }
+        
+        .container {
+            max-width: 680px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+            position: relative;
+            z-index: 1;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .logo-container {
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            margin: 0 auto;
+            border: 3px solid #F7931A;
+            box-shadow: 0 0 20px rgba(247, 147, 26, 0.2);
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+        
+        .logo:hover {
+            box-shadow: 0 0 30px rgba(247, 147, 26, 0.4);
+            transform: scale(1.05);
+        }
+        
+        h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #ffffff;
+            letter-spacing: -1px;
+        }
+        
+        .btc-accent {
+            color: #F7931A;
+        }
+        
+        .subtitle {
+            font-size: 1.4rem;
+            color: #8b949e;
+            margin-bottom: 35px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        
+        .value-props {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .value-prop {
+            text-align: center;
+        }
+        
+        .value-prop-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .value-prop-text {
+            font-size: 0.95rem;
+            color: #8b949e;
+            font-weight: 500;
+        }
+        
+        .description {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: #8b949e;
+            margin-bottom: 50px;
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .highlight {
+            color: #F7931A;
+            font-weight: 600;
+        }
+        
+        .signup-form {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 16px;
+            padding: 45px 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+        
+        .signup-form h2 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        
+        .signup-form p {
+            color: #8b949e;
+            margin-bottom: 30px;
+            font-size: 1rem;
+        }
+        
+        .form-group {
+            margin-bottom: 18px;
+        }
+        
+        input[type="email"] {
+            width: 100%;
+            padding: 16px 20px;
+            font-size: 1rem;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            background: #0d1117;
+            color: #c9d1d9;
+            transition: all 0.2s ease;
+            outline: none;
+        }
+        
+        input[type="email"]::placeholder {
+            color: #6e7681;
+        }
+        
+        input[type="email"]:focus {
+            border-color: #F7931A;
+            background: #161b22;
+            box-shadow: 0 0 0 3px rgba(247, 147, 26, 0.1);
+        }
+        
+        button {
+            width: 100%;
+            padding: 16px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #ffffff;
+            background: #F7931A;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-transform: none;
+            letter-spacing: 0.5px;
+        }
+        
+        button:hover {
+            background: #ff9d2e;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(247, 147, 26, 0.3);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        .success-message {
+            display: none;
+            background: rgba(46, 160, 67, 0.15);
+            border: 1px solid #2ea043;
+            color: #3fb950;
+            padding: 14px;
+            border-radius: 10px;
+            margin-top: 18px;
+            font-size: 0.95rem;
+        }
+        
+        footer {
+            color: #6e7681;
+            font-size: 0.9rem;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .value-props {
+                gap: 25px;
+            }
+            
+            .signup-form {
+                padding: 35px 25px;
+            }
+            
+            .logo {
+                width: 90px;
+                height: 90px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="hayek-icon.png" alt="Friedrich Hayek" class="logo">
+        </div>
+        
+        <h1>Haye<span class="btc-accent">₿</span>ian</h1>
+        <p class="subtitle">Coming Soon</p>
+        
+        <div class="value-props">
+            <div class="value-prop">
+                <div class="value-prop-icon">₿</div>
+                <div class="value-prop-text">Bitcoin First</div>
+            </div>
+            <div class="value-prop">
+                <div class="value-prop-icon">📊</div>
+                <div class="value-prop-text">Data Driven</div>
+            </div>
+            <div class="value-prop">
+                <div class="value-prop-icon">🔒</div>
+                <div class="value-prop-text">Sound Money</div>
+            </div>
+        </div>
+        
+        <p class="description">
+            A professional <span class="highlight">Bitcoin investment platform</span> combining the principles of 
+            Austrian economics with modern portfolio management. Built for investors who understand that 
+            <span class="highlight">sound money</span> is the foundation of lasting wealth.
+        </p>
+        
+        <div class="signup-form">
+            <h2>Get Early Access</h2>
+            <p>Join the waitlist for exclusive launch benefits</p>
+            
+            <form action="https://formspree.io/f/xyzrqdkz" method="POST" id="signupForm">
+                <div class="form-group">
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Enter your email" 
+                        required
+                        autocomplete="email"
+                    >
+                </div>
+                <button type="submit">Join Waitlist</button>
+            </form>
+            
+            <div class="success-message" id="successMessage">
+                ✓ You're on the list! We'll be in touch soon.
+            </div>
+        </div>
+        
+        <footer>
+            © 2025 Hayekian. Built on Bitcoin principles.
+        </footer>
+    </div>
+    
+    <script>
+        const form = document.getElementById('signupForm');
+        const successMessage = document.getElementById('successMessage');
+        
+        form.addEventListener('submit', function(e) {
+            // Let the form submit normally to Formspree
+            // Formspree will redirect to their thank you page
+        });
+    </script>
+</body>
+</html>
