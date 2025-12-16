@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hayekian - Coming Soon</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Hayekian - A new crypto project. Coming soon. Sign up to be notified when we launch.">
-    <meta name="keywords" content="hayekian, crypto, cryptocurrency, blockchain, coming soon">
+    <meta name="description" content="Hayekian - Professional Bitcoin investment platform. Combining Austrian economics with modern BTC investing strategies.">
+    <meta name="keywords" content="hayekian, bitcoin, BTC, investing, cryptocurrency, Austrian economics, Friedrich Hayek">
     <meta name="author" content="Hayekian">
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hayekian.io/">
-    <meta property="og:title" content="Hayekian - Coming Soon">
-    <meta property="og:description" content="A new crypto project. Coming soon. Sign up to be notified when we launch.">
+    <meta property="og:title" content="Hayekian - Bitcoin Investment Platform">
+    <meta property="og:description" content="Professional Bitcoin investment platform combining Austrian economics with modern BTC strategies.">
+    <meta property="og:image" content="https://hayekian.io/hayek-icon.png">
     
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://hayekian.io/">
-    <meta property="twitter:title" content="Hayekian - Coming Soon">
-    <meta property="twitter:description" content="A new crypto project. Coming soon. Sign up to be notified when we launch.">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://hayekian.io/">
+    <meta name="twitter:title" content="Hayekian - Bitcoin Investment Platform">
+    <meta name="twitter:description" content="Professional Bitcoin investment platform combining Austrian economics with modern BTC strategies.">
+    <meta name="twitter:image" content="https://hayekian.io/hayek-icon.png">
     
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://hayekian.io/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/hayek-icon.png">
+    
+    <title>Hayekian - Bitcoin Investment Platform</title>
     
     <style>
         * {
@@ -33,21 +35,39 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #ffffff;
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             padding: 20px;
-            color: white;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        /* Bitcoin symbol background pattern */
+        body::before {
+            content: '₿';
+            position: absolute;
+            font-size: 800px;
+            color: rgba(247, 147, 26, 0.03);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            font-weight: 700;
         }
         
         .container {
-            max-width: 600px;
+            max-width: 700px;
             width: 100%;
             text-align: center;
             animation: fadeIn 1s ease-in;
+            position: relative;
+            z-index: 1;
         }
         
         @keyframes fadeIn {
@@ -61,110 +81,136 @@
             }
         }
         
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            border: 4px solid #F7931A;
+            box-shadow: 0 0 30px rgba(247, 147, 26, 0.3);
+            object-fit: cover;
+        }
+        
         h1 {
-            font-size: 4rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
+            font-size: 4.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #F7931A 0%, #FFD700 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             letter-spacing: -2px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            text-shadow: 0 4px 20px rgba(247, 147, 26, 0.3);
         }
         
         .subtitle {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-            font-weight: 300;
+            font-size: 1.8rem;
+            color: #F7931A;
+            margin-bottom: 25px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
         }
         
         .description {
-            font-size: 1.1rem;
-            margin-bottom: 3rem;
-            opacity: 0.85;
-            line-height: 1.6;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #cccccc;
+            margin-bottom: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
-        .signup-form {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 2.5rem;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .signup-form h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
+        .highlight {
+            color: #F7931A;
             font-weight: 600;
         }
         
+        .signup-form {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(247, 147, 26, 0.2);
+            border-radius: 20px;
+            padding: 45px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        .signup-form h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+            font-weight: 700;
+        }
+        
         .signup-form p {
-            margin-bottom: 1.5rem;
-            opacity: 0.9;
+            color: #aaaaaa;
+            margin-bottom: 30px;
+            font-size: 1.05rem;
         }
         
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 20px;
         }
         
         input[type="email"] {
             width: 100%;
-            padding: 1rem 1.5rem;
-            font-size: 1rem;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 50px;
-            background: rgba(255, 255, 255, 0.9);
-            color: #333;
+            padding: 18px 25px;
+            font-size: 1.05rem;
+            border: 2px solid rgba(247, 147, 26, 0.3);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.08);
+            color: #ffffff;
             transition: all 0.3s ease;
             outline: none;
         }
         
-        input[type="email"]:focus {
-            border-color: white;
-            background: white;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        input[type="email"]::placeholder {
+            color: #888888;
         }
         
-        input[type="email"]::placeholder {
-            color: #999;
+        input[type="email"]:focus {
+            border-color: #F7931A;
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 0 20px rgba(247, 147, 26, 0.2);
         }
         
         button {
             width: 100%;
-            padding: 1rem 2rem;
+            padding: 18px;
             font-size: 1.1rem;
-            font-weight: 600;
+            font-weight: 700;
+            color: #000000;
+            background: linear-gradient(135deg, #F7931A 0%, #FFD700 100%);
             border: none;
-            border-radius: 50px;
-            background: white;
-            color: #667eea;
+            border-radius: 12px;
             cursor: pointer;
             transition: all 0.3s ease;
             text-transform: uppercase;
             letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(247, 147, 26, 0.4);
         }
         
         button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        }
-        
-        button:active {
-            transform: translateY(0);
+            box-shadow: 0 6px 25px rgba(247, 147, 26, 0.6);
         }
         
         .success-message {
             display: none;
-            background: rgba(76, 175, 80, 0.9);
-            padding: 1rem;
+            background: rgba(76, 175, 80, 0.2);
+            border: 1px solid #4CAF50;
+            color: #4CAF50;
+            padding: 15px;
             border-radius: 10px;
-            margin-top: 1rem;
+            margin-top: 20px;
         }
         
-        .footer {
-            margin-top: 3rem;
-            opacity: 0.7;
-            font-size: 0.9rem;
+        footer {
+            color: #666666;
+            font-size: 0.95rem;
+            margin-top: 40px;
         }
         
         @media (max-width: 768px) {
@@ -173,26 +219,35 @@
             }
             
             .subtitle {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
             }
             
             .signup-form {
-                padding: 2rem 1.5rem;
+                padding: 30px 25px;
+            }
+            
+            .logo {
+                width: 100px;
+                height: 100px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="hayek-icon.png" alt="Friedrich Hayek" class="logo">
+        
         <h1>Hayekian</h1>
         <p class="subtitle">Coming Soon</p>
+        
         <p class="description">
-            We're building something exciting in the crypto space. 
-            Be the first to know when we launch.
+            Where <span class="highlight">Austrian Economics</span> meets <span class="highlight">Bitcoin</span>. 
+            Professional investment strategies grounded in sound money principles and data-driven analysis. 
+            Join the waitlist to be among the first to access our platform.
         </p>
         
         <div class="signup-form">
-            <h2>Get Notified</h2>
+            <h2>Get Early Access</h2>
             <p>Sign up to receive updates about our launch</p>
             
             <form action="https://formspree.io/f/xyzrqdkz" method="POST" id="signupForm">
@@ -213,9 +268,9 @@
             </div>
         </div>
         
-        <div class="footer">
-            <p>&copy; 2025 Hayekian. All rights reserved.</p>
-        </div>
+        <footer>
+            © 2025 Hayekian. All rights reserved.
+        </footer>
     </div>
     
     <script>
@@ -224,7 +279,7 @@
         
         form.addEventListener('submit', function(e) {
             // Let the form submit normally to Formspree
-            // After submission, Formspree will redirect to their thank you page
+            // Formspree will redirect to their thank you page
             // We could customize this with AJAX if needed
         });
     </script>
