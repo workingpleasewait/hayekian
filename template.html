@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BTC Daily Report Template used by Hayekian BTC Daily for structured Bitcoin market analysis combining technical indicators, macro context, and ETF flow data.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://hayekian.io/template">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <title>BTC Daily Report Template - Hayekian BTC Daily</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #000000;
+            border-bottom: 2px solid #F7931A;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #F7931A;
+        }
+        
+        .intro {
+            margin: 20px 0 40px 0;
+            color: #555555;
+            font-size: 1.05rem;
+        }
+        
+        .template-section {
+            background: #f9f9f9;
+            border-left: 4px solid #F7931A;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+        }
+        
+        .field-name {
+            font-weight: 700;
+            color: #F7931A;
+        }
+        
+        .field-description {
+            color: #666666;
+            font-style: italic;
+            margin-left: 20px;
+        }
+        
+        ul {
+            margin: 15px 0 15px 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #333333;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #333333;
+        }
+        
+        a {
+            color: #F7931A;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .back-link {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <h1>BTC Daily Report Template</h1>
+    <p class="intro">Structured framework for Bitcoin market analysis used by Hayekian BTC Daily.</p>
+    
+    <h2>Template Overview</h2>
+    
+    <p>The BTC Daily Report Template provides a consistent structure for analyzing Bitcoin markets by combining technical indicators, macro context, microstructure analysis, and ETF flow data. This template is designed for local-only execution with no external dependencies.</p>
+    
+    <h2>Report Structure</h2>
+    
+    <h3>1. Market Snapshot</h3>
+    
+    <div class="template-section">
+<span class="field-name">Date:</span> [YYYY-MM-DD]<br>
+<span class="field-name">BTC Price:</span> [Current price in USD]<br>
+<span class="field-name">24h Change:</span> [Percentage change]<br>
+<span class="field-name">24h Volume:</span> [Trading volume across exchanges]<br>
+<span class="field-name">Market Cap:</span> [Current market capitalization]
+    </div>
+    
+    <p><strong>Purpose:</strong> Establish baseline market conditions and price context for the analysis period.</p>
+    
+    <h3>2. Technical Indicators</h3>
+    
+    <div class="template-section">
+<span class="field-name">RSI (14-period):</span> [Value 0-100]<br>
+<span class="field-description">→ Interpretation: [Overbought >70 / Neutral 30-70 / Oversold <30]</span><br>
+<br>
+<span class="field-name">MACD:</span><br>
+<span class="field-description">→ MACD Line: [Value]</span><br>
+<span class="field-description">→ Signal Line: [Value]</span><br>
+<span class="field-description">→ Histogram: [Value]</span><br>
+<span class="field-description">→ Signal: [Bullish crossover / Bearish crossover / Neutral]</span><br>
+<br>
+<span class="field-name">Moving Averages:</span><br>
+<span class="field-description">→ DMA20: [Value]</span><br>
+<span class="field-description">→ DMA50: [Value]</span><br>
+<span class="field-description">→ DMA100: [Value]</span><br>
+<span class="field-description">→ DMA200: [Value]</span><br>
+<span class="field-description">→ Price vs MA50: [Above / Below] by [X%]</span><br>
+<br>
+<span class="field-name">Support/Resistance Levels:</span><br>
+<span class="field-description">→ Key Support: [Price levels]</span><br>
+<span class="field-description">→ Key Resistance: [Price levels]</span>
+    </div>
+    
+    <p><strong>Purpose:</strong> Quantify momentum, trend direction, and key price levels using multiple technical indicators.</p>
+    
+    <h3>3. Macro Context</h3>
+    
+    <div class="template-section">
+<span class="field-name">Monetary Policy:</span><br>
+<span class="field-description">→ Fed Funds Rate: [Current rate]</span><br>
+<span class="field-description">→ Recent Policy Changes: [Summary]</span><br>
+<br>
+<span class="field-name">Inflation Metrics:</span><br>
+<span class="field-description">→ CPI (Latest): [Value]</span><br>
+<span class="field-description">→ PPI (Latest): [Value]</span><br>
+<br>
+<span class="field-name">Currency Markets:</span><br>
+<span class="field-description">→ DXY (Dollar Index): [Value and trend]</span><br>
+<br>
+<span class="field-name">Risk Environment:</span><br>
+<span class="field-description">→ S&P 500: [Performance]</span><br>
+<span class="field-description">→ VIX: [Volatility level]</span><br>
+<span class="field-description">→ Gold: [Performance]</span><br>
+<br>
+<span class="field-name">Macro Summary:</span> [2-3 sentence synthesis]
+    </div>
+    
+    <p><strong>Purpose:</strong> Contextualize Bitcoin price action within broader economic conditions and risk appetite.</p>
+    
+    <h3>4. ETF Flow Analysis</h3>
+    
+    <div class="template-section">
+<span class="field-name">Daily ETF Flows:</span><br>
+<span class="field-description">→ Net Inflow/Outflow: [Value in USD or BTC]</span><br>
+<span class="field-description">→ Largest Contributors: [ETF names and flows]</span><br>
+<br>
+<span class="field-name">Weekly Trend:</span> [7-day cumulative flow]<br>
+<span class="field-name">Monthly Trend:</span> [30-day cumulative flow]<br>
+<br>
+<span class="field-name">Institutional Signal:</span> [Accumulation / Distribution / Neutral]
+    </div>
+    
+    <p><strong>Purpose:</strong> Track institutional capital flows and identify accumulation or distribution patterns.</p>
+    
+    <h3>5. Microstructure Analysis</h3>
+    
+    <div class="template-section">
+<span class="field-name">Order Book Depth:</span><br>
+<span class="field-description">→ Bid Depth (1% below): [Value]</span><br>
+<span class="field-description">→ Ask Depth (1% above): [Value]</span><br>
+<span class="field-description">→ Bid/Ask Ratio: [Ratio]</span><br>
+<br>
+<span class="field-name">Liquidity Assessment:</span> [High / Medium / Low]<br>
+<br>
+<span class="field-name">Exchange Distribution:</span><br>
+<span class="field-description">→ Binance: [Volume %]</span><br>
+<span class="field-description">→ Coinbase: [Volume %]</span><br>
+<span class="field-description">→ Kraken: [Volume %]</span><br>
+<span class="field-description">→ Other: [Volume %]</span>
+    </div>
+    
+    <p><strong>Purpose:</strong> Assess market depth, liquidity conditions, and potential slippage zones.</p>
+    
+    <h3>6. Confluence Assessment</h3>
+    
+    <div class="template-section">
+<span class="field-name">Technical Confluence:</span><br>
+<span class="field-description">→ Indicators Aligned: [List]</span><br>
+<span class="field-description">→ Indicators Divergent: [List]</span><br>
+<br>
+<span class="field-name">Macro-Technical Alignment:</span> [Aligned / Divergent]<br>
+<span class="field-description">→ Explanation: [Brief synthesis]</span><br>
+<br>
+<span class="field-name">Institutional-Price Alignment:</span> [Aligned / Divergent]<br>
+<span class="field-description">→ Explanation: [ETF flows vs price action]</span><br>
+<br>
+<span class="field-name">Overall Confluence Score:</span> [Strong / Moderate / Weak]
+    </div>
+    
+    <p><strong>Purpose:</strong> Identify convergence or divergence across multiple analytical dimensions.</p>
+    
+    <h3>7. Daily Summary</h3>
+    
+    <div class="template-section">
+<span class="field-name">Market Bias:</span> [Bullish / Neutral / Bearish]<br>
+<br>
+<span class="field-name">Key Observations:</span><br>
+<span class="field-description">• [Observation 1]</span><br>
+<span class="field-description">• [Observation 2]</span><br>
+<span class="field-description">• [Observation 3]</span><br>
+<br>
+<span class="field-name">Levels to Watch:</span><br>
+<span class="field-description">→ Upside: [Price level and significance]</span><br>
+<span class="field-description">→ Downside: [Price level and significance]</span><br>
+<br>
+<span class="field-name">Austrian Economic Note:</span><br>
+<span class="field-description">[Optional: Relevant observation about price signals, time preference, or market coordination]</span>
+    </div>
+    
+    <p><strong>Purpose:</strong> Synthesize analysis into actionable insights while maintaining analytical objectivity.</p>
+    
+    <h2>Data Sources</h2>
+    
+    <ul>
+        <li><strong>Price Data:</strong> Binance, Coinbase, Kraken, CoinGecko</li>
+        <li><strong>ETF Flow Data:</strong> Public ETF holdings and daily flow reports</li>
+        <li><strong>Macro Data:</strong> Federal Reserve, Bureau of Labor Statistics, financial market indices</li>
+        <li><strong>Order Book Data:</strong> Real-time order book snapshots from major exchanges</li>
+    </ul>
+    
+    <h2>Analytical Principles</h2>
+    
+    <ul>
+        <li><strong>Objectivity:</strong> Present data and observations without prescriptive trading advice</li>
+        <li><strong>Multi-Dimensional:</strong> Combine technical, macro, institutional, and microstructure perspectives</li>
+        <li><strong>Consistency:</strong> Use the same framework daily to enable pattern recognition over time</li>
+        <li><strong>Privacy-First:</strong> All analysis occurs locally with no external data transmission</li>
+        <li><strong>Austrian Foundation:</strong> Respect price signals as aggregated market knowledge</li>
+    </ul>
+    
+    <h2>Usage Notes</h2>
+    
+    <p>This template is designed for daily execution via the Hayekian BTC Daily command-line tool. All data is fetched, processed, and analyzed locally on the user's macOS machine. The framework prioritizes clarity and consistency over complexity, enabling users to develop their own market intuition through repeated observation.</p>
+    
+    <p>The template does not provide buy/sell signals or trading recommendations. Instead, it presents structured information to support decentralized decision-making by individual market participants.</p>
+    
+    <div class="back-link">
+        <p><a href="/">← Back to Hayekian.io</a></p>
+    </div>
+</body>
+</html>
