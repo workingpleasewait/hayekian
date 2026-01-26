@@ -185,6 +185,29 @@
             margin-right: 6px;
         }
         
+        .cta-button {
+            display: inline-block;
+            padding: 20px 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #000000;
+            background: linear-gradient(135deg, #F7931A 0%, #FFD700 100%);
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            box-shadow: 0 4px 20px rgba(247, 147, 26, 0.5);
+            margin: 30px 0;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(247, 147, 26, 0.7);
+        }
+        
         .signup-form {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -300,7 +323,7 @@
         <img src="hayek-icon.png" alt="Friedrich Hayek" class="logo">
         
         <h1>Hayekian</h1>
-        <p class="subtitle">Coming Soon</p>
+        <p class="subtitle">NOW AVAILABLE</p>
         
         <p class="description">
             Where <span class="highlight">Austrian Economics</span> meets <span class="highlight">Bitcoin</span>. 
@@ -309,8 +332,12 @@
         </p>
         
         <div class="platform-badge">
-            <span class="icon">🍎</span> macOS Native Application
+            <span class="icon">⌘</span> macOS Native Application
         </div>
+        
+        <a href="https://hayekians.gumroad.com/l/hayekian-btc-daily-apple-silicon" class="cta-button" target="_blank" rel="noopener noreferrer">
+            DOWNLOAD ON GUMROAD
+        </a>
         
         <div class="features">
             <div class="feature">
@@ -331,8 +358,8 @@
         </div>
         
         <div class="signup-form">
-            <h2>Get Launch Updates</h2>
-            <p>Be the first to know when Hayekian launches</p>
+            <h2>Stay Updated</h2>
+            <p>Get notified about new features, updates, and future Hayekian products</p>
             
             <form action="https://formspree.io/f/xyzrqdkz" method="POST" id="signupForm">
                 <div class="form-group">
