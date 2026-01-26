@@ -31,3 +31,4 @@ Allow: /
 
 # Sitemap
 Sitemap: https://hayekian.io/sitemap.xml
+
